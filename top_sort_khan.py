@@ -4,6 +4,7 @@ from collections import deque
 def topological_sort(graph):
   n = len(graph)
   degrees = [0] * n
+  print(n, degrees)
   for i in range(n):
     for neighbor in graph[i]:
       degrees[neighbor] += 1
