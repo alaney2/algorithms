@@ -1,13 +1,13 @@
 import hashlib
-from english_words import english_words_set
+# from english_words import english_words_set
 import nltk
-# nltk.download()
+nltk.download()
 from nltk.corpus import words
 word_list = words.words()
 print(len(word_list))
 
-HASH = 'cefcc8054daa320092d276e46aa1304b'
-SALT = '4969711e2410'
+HASH = '7e3261e24381ac38020ba88a06c686d1'
+SALT = '49b19aaeb7fc'
 def decode():
   for word in word_list:
     if len(word) != 7:
